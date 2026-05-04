@@ -13,6 +13,7 @@ import { Separator } from './ui/separator'
 async function Sidebar() {
 
     const authUser = await currentUser()
+    // console.log("sidebartsx",authUser)
     if(!authUser){
         return(
             <UnAuthenticatedSidebar/>
@@ -24,8 +25,6 @@ async function Sidebar() {
             <UnAuthenticatedSidebar/>
         )
     }
-
-    console.log(user)
 
     return (
     <div className="sticky top-20">
