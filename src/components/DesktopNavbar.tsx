@@ -10,7 +10,7 @@ import { syncUser } from "@/actions/user.action";
 async function DesktopNavbar() {
   const user = await currentUser();
   if(user) await syncUser()
-  console.log(user)
+  // console.log(user)
 
   return (
     <div className="hidden md:flex items-center space-x-4">

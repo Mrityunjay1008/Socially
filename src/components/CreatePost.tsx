@@ -48,7 +48,7 @@ function CreatePost  ()  {
             </Avatar>
             <Textarea
               placeholder="What's on your mind?"
-              className="min-h-[100px] resize-none border-none focus-visibleing-0 p-3 text-base bg-[rgb(10,10,10)]"
+              className="min-h-[100px] resize-none border-none focus-visibleing-0 p-3 text-base"
               value={content}
               onChange={(e) => setContent(e.target.value)}
               disabled={isPosting}
