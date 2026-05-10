@@ -6,6 +6,7 @@ import { ClerkProvider } from "@clerk/nextjs";
 import Navbar from "@/components/Navbar";
 import Sidebar from "@/components/Sidebar";
 import { Toaster } from "react-hot-toast";
+// import { NextSSRPlugin } from "@uploadthing/react/next-ssr-plugin"
 
 const geistSans = Geist({
 	variable: "--font-geist-sans",
@@ -81,6 +82,7 @@ export default function RootLayout({
 											<Sidebar/>
 										</div>
 										<div className="lg:col-span-9">
+											{/* <NextSSRPlugin routerConfig={extractRouterConfig(ourFileRouter)} /> */}
 											{children}
 										</div>
 									</div>
